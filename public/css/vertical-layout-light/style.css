@@ -10257,7 +10257,7 @@ pre code {
 .table-info,
 .table-info > th,
 .table-info > td {
-  background-color: #c2defe;
+  background-color: #c2defe;  /*#c2defe*/
 }
 
 .table-info th,
@@ -11110,7 +11110,7 @@ fieldset:disabled .wizard > .actions a,
 .show > .btn-primary.dropdown-toggle,
 .wizard > .actions .show > a.dropdown-toggle {
   color: #fff;
-  background-color: #3b3a88;
+  background-color: #3b3a88; /*#3b3a88*/
   border-color: #37367f;
 }
 

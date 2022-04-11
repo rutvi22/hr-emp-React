@@ -3,6 +3,7 @@ import { Route, Routes } from 'react-router-dom'
 import { AddCelebrations } from './AddCelebrations'
 import { AddUser } from './AddUser'
 import { CelebrationDetail } from './CelebrationDetail'
+import { LeaveDetail } from './LeaveDetail'
 import { LeftSideBar } from './LeftSideBar'
 import { Login } from './Login'
 import { Logout } from './Logout'
@@ -42,6 +43,7 @@ export const Main = () => {
      <Route path='/adduser' element={<AddUser/>}/>
      <Route path='/users' element={<UserDetail/>}/>
      <Route path='/celebrationdetail' element={<CelebrationDetail/>}/>
+     {/* <Route path='/leavedetail' element={<LeaveDetail/>}/> */}
      <Route path='/addcelebration' element={<AddCelebrations/>}/>
      <Route path='/login' element={<Login/>}/>
      <Route path='/signup' element={<SignUp/>}/>

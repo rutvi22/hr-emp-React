@@ -9,7 +9,7 @@ export const UserDetail = () => {
     
 
   const getData = () => {
-      axios.get("http://localhost:2000/users").then(res => {
+      axios.get("http://localhost:5000/users").then(res => {
           console.log(res.data.data)
           setuserList(res.data.data)
       })

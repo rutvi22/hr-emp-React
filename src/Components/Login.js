@@ -21,7 +21,7 @@ export const Login = () => {
                 password: password
             }
         
-        await axios.post('http://localhost:2000/login', data).then((res) => {
+        await axios.post('http://localhost:5000/login', data).then((res) => {
 
 
             if (res.data.status == 200 ) {
@@ -58,7 +58,7 @@ export const Login = () => {
         <div className="col-lg-4 mx-auto">
           <div className="auth-form-light text-left py-5 px-4 px-sm-5">
             <div className="brand-logo">
-              <img src="../../images/logo.svg" alt="logo" />
+              <img src="../../images/HRporlogo.png" alt="logo" />
             </div>
             <h4>Hello! let's get started</h4>
             <h6 className="font-weight-light">Sign in to continue.</h6>

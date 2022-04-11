@@ -8,14 +8,14 @@ export const MainPanel = () => {
         <div className="col-md-12 grid-margin">
           <div className="row">
             <div className="col-12 col-xl-8 mb-4 mb-xl-0">
-              <h3 className="font-weight-bold">Welcome Aamir</h3>
+              <h3 className="font-weight-bold">Welcome </h3>
               <h6 className="font-weight-normal mb-0">All systems are running smoothly! You have <span className="text-primary">3 unread alerts!</span></h6>
             </div>
             <div className="col-12 col-xl-4">
               <div className="justify-content-end d-flex">
                 <div className="dropdown flex-md-grow-1 flex-xl-grow-0">
                   <button className="btn btn-sm btn-light bg-white dropdown-toggle" type="button" id="dropdownMenuDate2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                    <i className="mdi mdi-calendar" /> Today (10 Jan 2021)
+                    <i className="mdi mdi-calendar" /> Today (31 Mar 2022)
                   </button>
                   <div className="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuDate2">
                     <a className="dropdown-item" href="#">January - March</a>
@@ -33,15 +33,16 @@ export const MainPanel = () => {
         <div className="col-md-6 grid-margin stretch-card">
           <div className="card tale-bg">
             <div className="card-people mt-auto">
-              <img src="images/dashboard/people.svg" alt="people" />
+              <img src="images/peopleHR.jpg" alt="people" /> 
               <div className="weather-info">
                 <div className="d-flex">
                   <div>
-                    <h2 className="mb-0 font-weight-normal"><i className="icon-sun mr-2" />31<sup>C</sup></h2>
+                    <h2 className="mb-0 font-weight-normal"><i/><sup></sup></h2>
+                    {/* className="icon-sun mr-2" */}
                   </div>
                   <div className="ml-2">
-                    <h4 className="location font-weight-normal">Bangalore</h4>
-                    <h6 className="font-weight-normal">India</h6>
+                    <h4 className="location font-weight-normal"></h4>
+                    <h6 className="font-weight-normal"></h6> 
                   </div>
                 </div>
               </div>
@@ -53,7 +54,7 @@ export const MainPanel = () => {
             <div className="col-md-6 mb-4 stretch-card transparent">
               <div className="card card-tale">
                 <div className="card-body">
-                  <p className="mb-4">Today’s Bookings</p>
+                  <p className="mb-4">Today’s Update</p>
                   <p className="fs-30 mb-2">4006</p>
                   <p>10.00% (30 days)</p>
                 </div>
@@ -62,7 +63,7 @@ export const MainPanel = () => {
             <div className="col-md-6 mb-4 stretch-card transparent">
               <div className="card card-dark-blue">
                 <div className="card-body">
-                  <p className="mb-4">Total Bookings</p>
+                  <p className="mb-4">Total Update</p>
                   <p className="fs-30 mb-2">61344</p>
                   <p>22.00% (30 days)</p>
                 </div>
@@ -95,7 +96,7 @@ export const MainPanel = () => {
         <div className="col-md-6 grid-margin stretch-card">
           <div className="card">
             <div className="card-body">
-              <p className="card-title">Order Details</p>
+              <p className="card-title">Details</p>
               <p className="font-weight-500">The total number of sessions within the date range. It is the period time a user is actively engaged with your website, page or app, etc</p>
               <div className="d-flex flex-wrap mb-5">
                 <div className="mr-5 mt-3">

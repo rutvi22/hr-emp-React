@@ -30,7 +30,7 @@ export const LeftSideBar = () => {
       </li>
       
       
-      <li className="nav-item">
+      {/* <li className="nav-item">
         <a className="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
           <i className="icon-bar-graph menu-icon" />
           <span className="menu-title">Charts</span>
@@ -41,7 +41,7 @@ export const LeftSideBar = () => {
             <li className="nav-item"> <a className="nav-link" href="pages/charts/chartjs.html">ChartJs</a></li>
           </ul>
         </div>
-      </li>
+      </li> */}
       <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
               <i class="icon-grid-2 menu-icon"></i>
@@ -55,7 +55,22 @@ export const LeftSideBar = () => {
               </ul>
             </div>
           </li>
-      <li className="nav-item">
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
+              {/* <i class="icon-grid-3 menu-icon"></i> */}
+              <span class="menu-title">Leave</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="tables">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <Link class="nav-link" to="leavedetail">Leave details</Link></li>
+                <li class="nav-item"> <Link class="nav-link" to="addleave">Add leave</Link></li>
+              </ul>
+            </div>
+          </li>
+
+      {/* <li className="nav-item">
         <a className="nav-link" data-toggle="collapse" href="#icons" aria-expanded="false" aria-controls="icons">
           <i className="icon-contract menu-icon" />
           <span className="menu-title">Icons</span>
@@ -66,9 +81,9 @@ export const LeftSideBar = () => {
             <li className="nav-item"> <a className="nav-link" href="pages/icons/mdi.html">Mdi icons</a></li>
           </ul>
         </div>
-      </li>
+      </li> */}
       
-      <li className="nav-item">
+      {/* <li className="nav-item">
         <a className="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
           <i className="icon-ban menu-icon" />
           <span className="menu-title">Error pages</span>
@@ -80,13 +95,13 @@ export const LeftSideBar = () => {
             <li className="nav-item"> <a className="nav-link" href="pages/samples/error-500.html"> 500 </a></li>
           </ul>
         </div>
-      </li>
-      <li className="nav-item">
+      </li> */}
+      {/* <li className="nav-item">
         <a className="nav-link" href="pages/documentation/documentation.html">
           <i className="icon-paper menu-icon" />
           <span className="menu-title">Documentation</span>
         </a>
-      </li>
+      </li> */}
       <li className="nav-item">
         <Link className="nav-link" to="/login">
           <i className=  "mdi mdi-login-variant"/>

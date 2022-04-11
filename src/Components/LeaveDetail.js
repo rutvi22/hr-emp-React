@@ -3,14 +3,14 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 
 
-export const CelebrationDetail = () => {
-  const [celebrationList, setcelebrationList] = useState([])
+export const LeaveDetail = () => {
+  const [leaveList, setleaveList] = useState([])
     
 
   const getData = () => {
-      axios.get("http://localhost:5000/celebrations").then(res => {
+      axios.get("http://localhost:5000/leaves").then(res => {
           console.log(res.data.data)
-          setcelebrationList(res.data.data)
+          setleaveList(res.data.data)
       })
 
   }
@@ -24,10 +24,10 @@ export const CelebrationDetail = () => {
   return (
     <div className='content-wrapper'>
     <div className='row'>
-    <div className="col-lg-12 grid-margin stretch-card">
+    <div className="col-lg-14 grid-margin stretch-card">
   <div className="card">
     <div className="card-body">
-      <h4 className="card-title"> Celebration Details</h4>
+      <h4 className="card-title"> Leave Details</h4>
       <p className="card-description">
         {/* Add class <code>.table-striped</code> */}
       </p>
@@ -39,46 +39,46 @@ export const CelebrationDetail = () => {
                 #
               </th>
               <th>
-                Title
+                Leave Reason
               </th>
               <th>
-                Description
+                Leave From
               </th>
               <th>
-                Date
+                Leave To
               </th>
               <th>
-                Time
+                user
               </th>
               <th>
-               Venue
+               Accept Reject
               </th>
             </tr>
           </thead>
           <tbody>
-          {celebrationList.map((celebration,index)=>{
+          {leaveList.map((leave,index)=>{
                         return(
                           <tr class="table-info">
                           <td scope="row">{index+1}
                           </td>
                           <td>
-                            {celebration.title}
+                            {leave.leaveReason}
                           </td>
                           <td>
-                          {celebration.description}  
+                          {leave.leaveFrom}  
                           </td>
                           <td>
-                          {celebration.date}
+                          {leave.leaveTo}
                           </td>
                           <td>
-                          {celebration.time}
+                          {leave.user}
                           </td>
                           <td>
-                          {celebration.venue}
+                          {leave.acceptReject}
                           </td>
                           <td>
-                                        <Link  to={`/delete/${celebration._id}`} className = "btn btn-danger">DELETE</Link>
-                                        <Link  to={`/update/${celebration._id}`} className  = "btn btn-primary">UPDATE</Link>
+                                        <Link  to={`/delete/${leave._id}`} className = "btn btn-danger">DELETE</Link>
+                                        <Link  to={`/update/${leave._id}`} className  = "btn btn-primary">UPDATE</Link>
                                     </td>
                         </tr>
 
